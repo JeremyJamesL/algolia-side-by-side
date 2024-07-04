@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Verdana", 'sans-serif';
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.app {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.index-title {
+    margin-bottom: 20px;
+}
+
+.searchbox-container {
+    margin-bottom: 50px;
+}
+
+.hits-container {
+    display: flex;
+    gap: 50px;
+}
+
+.hits-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Hits */
+
+.hits {
+    margin-bottom: 20px;
+}
+
+.hit {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.hit-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hit-body {
+    align-self: flex-end;
+}
+
+.hit-title {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
